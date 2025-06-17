@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Q&A Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Bokor&family=Moul&family=Moulpali&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">សំណួរនិងចម្លើយ គ្រួសារសតិប្បដ្ឋាន</h1>
+    <input type="text" id="searchInput" placeholder="ស្វែងរកសំណួរ..." />
+    <div class="filter-container">
+        <label for="groupFilter">ជ្រើសរើសក្រុមសំណួរ:</label>
+        <select id="groupFilter">
+          <option value="all">ទាំងអស់</option>
+        </select>
+      </div>
+      
+    <ul id="questionList"></ul>
+  </div>
+
+
+  <div id="answerModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalQuestion"></h2>
+      <div id="modalTags" class="modal-tags"></div>
+      <p id="modalAnswer"></p>
+    </div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
