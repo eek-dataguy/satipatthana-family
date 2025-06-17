@@ -1,0 +1,220 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .container .title {
+    font-family: "Moulpali";
+    font-size: 1.5rem;
+  }
+  
+  /* input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+   */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .tag {
+    display: inline-block;
+    background: #007BFF;
+    color: white;
+    padding: 3px 8px;
+    margin-left: 10px;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+  }
+
+  #modalQuestion {
+    font-size: 18px;
+    font-family: "Battambang";
+    color: #28a745;
+  }
+
+  #modalAnswer {
+    font-family: "Battambang";
+    /* font-weight: 300; */
+  }
+
+  .modal-tags {
+    font-family: "Battambang";
+    color: rgb(228, 151, 10);
+  }
+  
+  .close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+
+  .question-item {
+    position: relative;
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+  }
+  
+  .question-text {
+    font-family: "Battambang";
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .question-text .tag {
+    font-family: "Battambang";
+  }
+  
+  .tag {
+    display: inline-block;
+    background: #007BFF;
+    color: white;
+    padding: 4px 8px;
+    margin-left: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  
+  .tag-group {
+    font-family: "Bokor";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #28a745;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+
+  input[type="text"] {
+    font-family: "Battambang";
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+
+
+  .filter-container {
+    display: flex;
+    align-items: center;
+    font-family: "Battambang";
+    gap: 12px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    font-size: 16px;
+  }
+  
+  .filter-container label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #groupFilter {
+    font-family: "Battambang";
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  #groupFilter:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+  }
+  
+  
+  @media (max-width: 800px) {
+    input[type="text"] {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  
+  
+  @media (max-width: 800px) {
+    .question-text {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .question-text .tag {
+      display: inline-block;
+      margin-top: 8px;
+      margin-left: 0;
+      margin-right: 10px;
+      width: fit-content; /* This ensures the tag width matches the content */
+      white-space: nowrap;
+    }
+  }
+  
+  @media (max-width: 430px) {
+    .tag-group {
+      top: auto;
+      bottom: 10px;
+      right: 10px;
+    }
+  }
+  
