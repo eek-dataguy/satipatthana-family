@@ -251,8 +251,7 @@ body {
   }
   
   .navbar-right a {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
     text-decoration: none;
     color: #007BFF;
     font-weight: 500;
