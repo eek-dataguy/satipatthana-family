@@ -4,6 +4,9 @@ self.addEventListener('install', (event) => {
       return cache.addAll([
         '/',
         '/index.html',
+        '/rule.html',
+        '/questions.html',
+        '/tripitaka.html',
         '/style.css',
         '/script.js',
         'favicon.jpeg',
