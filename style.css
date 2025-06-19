@@ -217,5 +217,86 @@ body {
       bottom: 10px;
       right: 10px;
     }
+      
+  }
+
+/* Header Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-family: 'Battambang', sans-serif;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo {
+    height: 40px;
+    width: auto;
+  }
+  
+  .site-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .navbar-right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar-right a:hover {
+    color: #0056b3;
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 800px) {
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: white;
+      flex-direction: column;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 10px;
+      border-radius: 8px;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
   }
   
