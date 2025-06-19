@@ -13,6 +13,24 @@
   <link rel="manifest" href="/manifest.json">
 </head>
 <body>
+
+        <header class="navbar">
+        <div class="navbar-left">
+          <img src="favicon.jpeg" alt="Logo" class="logo" />
+          <span class="site-title">គ្រួសារសតិប្បដ្ឋាន</span>
+        </div>
+        <div class="navbar-right">
+          <nav class="nav-links">
+            <a href="#">ថ្នាក់រៀន</a>
+          <a href="#">សំណួរនិងចម្លើយ</a>
+          <a href="#">ព្រះវិន័យ</a>
+          <a href="#">ព្រះសូត្រ</a>
+          <a href="#">ព្រះអភិធម្ម</a>
+          </nav>
+          <div class="hamburger" id="hamburger">&#9776;</div>
+        </div>
+      </header>
+  
   <div class="container">
     <h1 class="title">សំណួរនិងចម្លើយ គ្រួសារសតិប្បដ្ឋាន</h1>
     <input type="text" id="searchInput" placeholder="ស្វែងរកសំណួរ..." />
@@ -38,5 +56,10 @@
   
 
   <script src="script.js"></script>
+  <script>
+    document.getElementById("hamburger").addEventListener("click", function () {
+      document.querySelector(".nav-links").classList.toggle("show");
+    });
+  </script>
 </body>
 </html>
